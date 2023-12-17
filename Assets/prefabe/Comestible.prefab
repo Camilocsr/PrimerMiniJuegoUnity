@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3819351173282871487}
   - component: {fileID: 4570724107409424747}
   - component: {fileID: 6428094629869375323}
+  - component: {fileID: 3571210499757110778}
   m_Layer: 0
   m_Name: Comestible
   m_TagString: Comestible
@@ -135,3 +136,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3571210499757110778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156045698458883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8481dc0b60403f7469b64cab51b3e0dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

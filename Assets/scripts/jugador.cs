@@ -7,7 +7,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     private new Rigidbody rigidbody; // Gravedad.
-    public float speed = 20f;
+    public float speed = 25f;
     private float moveHorizontal, moveVertical,saltar; // Variables de nivel de clase
     private bool enElSuelo = true;
 
@@ -41,14 +41,5 @@ public class NewBehaviourScript : MonoBehaviour
 
         rigidbody.velocity = movement;
 
-    }
-    //Inicia programacion de los comestibles.-----------------------------------
-
-    private void OnCollisionEnter(Collision collision) //Metodo para las coliciones....
-    {
-        if (collision.transform.CompareTag("Comestible"))
-        {
-            Destroy(collision.gameObject);// sirve para destruir el objeto entero....
-        }
     }
 }
