@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -38,5 +40,15 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         rigidbody.velocity = movement;
+
+    }
+    //Inicia programacion de los comestibles.-----------------------------------
+
+    private void OnCollisionEnter(Collision collision) //Metodo para las coliciones....
+    {
+        if (collision.transform.CompareTag("Comestible"))
+        {
+            Destroy(collision.gameObject);// sirve para destruir el objeto entero....
+        }
     }
 }
